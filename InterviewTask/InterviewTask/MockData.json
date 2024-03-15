@@ -1,0 +1,40 @@
+{
+"address": "123 Maple Street Mulberry QLD 4434", "from": "2024-02-16T00:00:00Z",
+"to": "2024-03-15T00:00:00Z",
+"usageHistories": [
+{
+"date": "2024-03-15T00:00:00Z", "cost": 4.3,
+"consumption": 20.15
+}, {
+"date": "2024-03-16T00:00:00Z", "cost": 3.0,
+"consumption": 17.0
+}, {
+"date": "2024-03-17T00:00:00Z", "cost": 4.7,
+"consumption": 24.45
+}, {
+"date": "2024-03-18T00:00:00Z", "cost": 6.0,
+"consumption": 30.5
+}, {
+"date": "2024-03-19T00:00:00Z", "cost": 4.12,
+"consumption": 18.7
+}, {
+"date": "2024-03-20T00:00:00Z", "cost": 5.23,
+"consumption": 25.15
+}, {
+"date": "2024-03-21T00:00:00Z", "cost": 2.5,
+"consumption": 14.5
+}, {
+"date": "2024-03-22T00:00:00Z", "cost": 5.1,
+"consumption": 24.5
+}, {
+"date": "2024-03-23T00:00:00Z", "cost": 4.92,
+"consumption": 25.53
+}, {
+"date": "2024-03-24T00:00:00Z", "cost": 5.12,
+"consumption": 22.35
+}, {
+"date": "2024-03-25T00:00:00Z", "cost": 3.78,
+"consumption": 23.15
+} ],
+"approxTotalCost": 130.0, "approxTotalElectricity": 500.0, "currentTotalCost": 60.0, "currentTotalElectricity": 200.0
+}

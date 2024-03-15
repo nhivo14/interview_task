@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailDailyUsageEnergyChart" customModule="InterviewTask" customModuleProvider="target">
+            <connections>
+                <outlet property="avgDailyConsumptionLabel" destination="93r-ow-CRs" id="fw0-qk-75o"/>
+                <outlet property="avgDailyUsageLabel" destination="IPT-OK-COg" id="JUa-8r-vlD"/>
+                <outlet property="dateRangeLabel" destination="MdR-Bi-yiZ" id="tdc-va-V1D"/>
+                <outlet property="scrollView" destination="PR2-af-6SN" id="y3p-Iy-xEe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pCt-QX-2gY">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="429"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PR2-af-6SN">
+                    <rect key="frame" x="20" y="68" width="399" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="dMG-hg-R1I"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="yrn-jN-Vjo"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="TKW-fP-SkD"/>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily usage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Um-PO-DQC">
+                    <rect key="frame" x="16" y="10" width="407" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 May -  15 Jun  2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdR-Bi-yiZ">
+                    <rect key="frame" x="16" y="39" width="407" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Avg daily usage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hl8-VA-t9d">
+                    <rect key="frame" x="16" y="340" width="119" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg daily comsumption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="079-oa-FvL">
+                    <rect key="frame" x="16" y="371" width="176.33333333333334" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPT-OK-COg">
+                    <rect key="frame" x="377" y="340" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93r-ow-CRs">
+                    <rect key="frame" x="377" y="371" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IPT-OK-COg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hl8-VA-t9d" secondAttribute="trailing" constant="20" id="57M-5k-ASl"/>
+                <constraint firstItem="PR2-af-6SN" firstAttribute="top" secondItem="MdR-Bi-yiZ" secondAttribute="bottom" constant="10" id="7yN-Pe-DXa"/>
+                <constraint firstAttribute="trailing" secondItem="93r-ow-CRs" secondAttribute="trailing" constant="20" id="B4U-0Z-v4n"/>
+                <constraint firstAttribute="trailing" secondItem="PR2-af-6SN" secondAttribute="trailing" constant="20" id="DOV-g4-PkS"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="079-oa-FvL" secondAttribute="bottom" constant="20" id="Fv5-8L-daq"/>
+                <constraint firstAttribute="trailing" secondItem="IPT-OK-COg" secondAttribute="trailing" constant="20" id="Kup-Ve-iFp"/>
+                <constraint firstItem="PR2-af-6SN" firstAttribute="leading" secondItem="pCt-QX-2gY" secondAttribute="leading" constant="20" id="Myl-ta-DjR"/>
+                <constraint firstItem="MdR-Bi-yiZ" firstAttribute="top" secondItem="1Um-PO-DQC" secondAttribute="bottom" constant="8" id="PPx-pb-rYZ"/>
+                <constraint firstItem="IPT-OK-COg" firstAttribute="centerY" secondItem="Hl8-VA-t9d" secondAttribute="centerY" id="R8o-LN-741"/>
+                <constraint firstAttribute="trailing" secondItem="MdR-Bi-yiZ" secondAttribute="trailing" constant="16" id="RPX-G5-NI7"/>
+                <constraint firstItem="Hl8-VA-t9d" firstAttribute="top" secondItem="PR2-af-6SN" secondAttribute="bottom" constant="20" id="SFl-bA-BTT"/>
+                <constraint firstItem="Hl8-VA-t9d" firstAttribute="leading" secondItem="pCt-QX-2gY" secondAttribute="leading" constant="16" id="SFy-r1-uke"/>
+                <constraint firstAttribute="trailing" secondItem="1Um-PO-DQC" secondAttribute="trailing" constant="16" id="SpY-ig-aYg"/>
+                <constraint firstItem="1Um-PO-DQC" firstAttribute="top" secondItem="pCt-QX-2gY" secondAttribute="top" constant="10" id="Y6B-l0-gs6"/>
+                <constraint firstItem="MdR-Bi-yiZ" firstAttribute="leading" secondItem="pCt-QX-2gY" secondAttribute="leading" constant="16" id="d8H-je-phF"/>
+                <constraint firstItem="1Um-PO-DQC" firstAttribute="leading" secondItem="pCt-QX-2gY" secondAttribute="leading" constant="16" id="emj-5h-geX"/>
+                <constraint firstItem="93r-ow-CRs" firstAttribute="centerY" secondItem="079-oa-FvL" secondAttribute="centerY" id="ljm-Us-djb"/>
+                <constraint firstItem="93r-ow-CRs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="079-oa-FvL" secondAttribute="trailing" constant="20" id="s3c-wX-Ox2"/>
+                <constraint firstItem="079-oa-FvL" firstAttribute="leading" secondItem="pCt-QX-2gY" secondAttribute="leading" constant="16" id="xbT-by-NfG"/>
+                <constraint firstItem="079-oa-FvL" firstAttribute="top" secondItem="Hl8-VA-t9d" secondAttribute="bottom" constant="10" id="zZl-h8-WLd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-132.06106870229007" y="-129.22535211267606"/>
+        </view>
+    </objects>
+</document>
